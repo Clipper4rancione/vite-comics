@@ -4,8 +4,11 @@ export default {
 };
 </script>
 
-<template></template>
+<template>
+  <h1>PROVA</h1>
+</template>
 
 
-<style>
+<style lang="scss">
+@use "./styles/general.scss" as *;
 </style>
