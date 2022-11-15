@@ -2,6 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
 
-    background-color: rgb(38, 38, 38);
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
 }
