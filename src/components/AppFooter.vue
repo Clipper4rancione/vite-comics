@@ -4,7 +4,9 @@ export default {
 };
 </script>
 
-<template></template>
+<template>
+  <footer>F</footer>
+</template>
 
 
 <style>
