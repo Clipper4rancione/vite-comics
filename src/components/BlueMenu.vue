@@ -36,8 +36,8 @@ export default {
 
 <template>
   <section class="blue-menu">
-    <div class="container">
-      <div class="bm-link">
+    <div class="container blue-container">
+      <div class="bm-link" v-for="(elemento, index) in blueMenu" :key="index">
         <img src="../assets/img/buy-comics-digital-comics.png" alt="" />
         <span>DIGITAL COMICS</span>
       </div>
@@ -48,6 +48,10 @@ export default {
 
 <style lang='scss' scoped>
 .blue-menu {
+  .blue-container {
+    padding: 40px;
+    display: flex;
+  }
   background-color: #3b7ef0;
   padding: 10px;
   .bm-link {
@@ -55,7 +59,7 @@ export default {
     align-items: center;
     width: calc(100% / 5);
     img {
-      width: 65px;
+      width: 60px;
       vertical-align: middle;
     }
     span {
