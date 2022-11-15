@@ -16,7 +16,7 @@ export default {
 
         {
           image: "buy-comics-subscriptions.png",
-          text: "SUBSCRIPTIO",
+          text: "SUBSCRIPTION",
         },
 
         {
@@ -31,15 +31,20 @@ export default {
       ],
     };
   },
+  metods: {
+    getPathImage(imageName) {
+      return new URL(`../assets/img/${imageName}`, import.meta.url).href;
+    },
+  },
 };
 </script>
 
 <template>
   <section class="blue-menu">
     <div class="container blue-container">
-      <div class="bm-link" v-for="(elemento, index) in blueMenu" :key="index">
+      <div class="bm-link" v-for="(el, index) in blueMenu" :key="index">
         <img src="../assets/img/buy-comics-digital-comics.png" alt="" />
-        <span>DIGITAL COMICS</span>
+        <span>{{ el.text }}</span>
       </div>
     </div>
   </section>
