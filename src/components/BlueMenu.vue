@@ -43,7 +43,9 @@ export default {
   <section class="blue-menu">
     <div class="container blue-container">
       <div class="bm-link" v-for="(el, index) in blueMenu" :key="index">
-        <img :src="getPathImage(el.image)" alt="" />
+        <div class="img-c">
+          <img :src="getPathImage(el.image)" alt="" />
+        </div>
         <span>{{ el.text }}</span>
       </div>
     </div>
@@ -65,7 +67,7 @@ export default {
     align-items: center;
     width: calc(100% / 5);
     img {
-      width: 60px;
+      width: 50px;
       vertical-align: middle;
     }
     span {

@@ -50,7 +50,7 @@ export default {
           </ul>
         </div>
         <div class="f-top-right">
-          <img src="../assets/img/dc-logo-bg.png" alt="" />
+          <!-- <img src="../assets/img/dc-logo-bg.png" alt="" /> -->
         </div>
       </div>
       <div class="footer-bottom"></div>
@@ -60,6 +60,13 @@ export default {
 
 
 <style lang="scss" scoped>
+.container {
+  background-image: url("../assets/img/dc-logo-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  overflow-y: hidden;
+}
 footer {
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
@@ -83,12 +90,9 @@ footer {
           color: white;
           text-decoration: none;
         }
-      }
-    }
-    .f-top-right {
-      overflow-y: hidden;
-      img {
-        transform: translateY(-18%);
+        a:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
