@@ -51,6 +51,7 @@ export default {
 </template>
 
 
+
 <style lang='scss' scoped>
 .blue-menu {
   .blue-container {
