@@ -1,8 +1,9 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import AppFooter from "./components/AppFooter.vue";
+import AppJumbo from "./components/AppJumbo.vue";
 import AppMain from "./components/AppMain.vue";
 import BlueMenu from "./components/BlueMenu.vue";
+import AppFooter from "./components/AppFooter.vue";
 import AppFooterBot from "./components/AppFooterBot.vue";
 
 export default {
@@ -13,12 +14,14 @@ export default {
     AppFooter,
     BlueMenu,
     AppFooterBot,
+    AppJumbo,
   },
 };
 </script>
 
 <template>
   <AppHeader />
+  <AppJumbo />
   <AppMain />
   <BlueMenu />
   <AppFooter />
