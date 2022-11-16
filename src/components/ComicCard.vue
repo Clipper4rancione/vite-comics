@@ -10,12 +10,14 @@ export default {
 <template>
   <div class="card-cont">
     <div class="img-area">
-      <div class="hover"></div>
+      <i class="bi bi-cart-plus"></i>
+
       <img :src="comic.thumb" :alt="comic.series" />
     </div>
 
     <div class="text-area">
       <span>{{ comic.series }}</span>
+      <p>{{ comic.price }}</p>
     </div>
   </div>
 </template>
@@ -27,8 +29,22 @@ export default {
   height: calc(100% / 2);
   padding: 20px;
   .img-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    position: relative;
   }
+
+  i {
+    display: none;
+    position: absolute;
+    font-size: 3rem;
+  }
+  .img-area:hover i {
+    display: block;
+  }
+
   .img-area:hover {
     filter: brightness(0.5);
   }
@@ -36,6 +52,8 @@ export default {
     object-fit: cover;
   }
   .text-area {
+    display: flex;
+    flex-direction: column;
     margin-top: 15px;
   }
   span {
