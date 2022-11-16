@@ -31,7 +31,7 @@ export default {
       ],
     };
   },
-  metods: {
+  methods: {
     getPathImage(imageName) {
       return new URL(`../assets/img/${imageName}`, import.meta.url).href;
     },
@@ -43,7 +43,7 @@ export default {
   <section class="blue-menu">
     <div class="container blue-container">
       <div class="bm-link" v-for="(el, index) in blueMenu" :key="index">
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="" />
+        <img :src="getPathImage(el.image)" alt="" />
         <span>{{ el.text }}</span>
       </div>
     </div>
