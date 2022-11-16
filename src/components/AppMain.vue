@@ -34,15 +34,21 @@ main {
   width: 100%;
   color: white;
   background-color: #212121;
-
+  padding: 30px 0px;
   .card-wrapper {
     margin-top: 20px;
 
     display: flex;
     flex-wrap: wrap;
   }
+  .cta {
+    text-align: center;
+    cursor: pointer;
+  }
   .button-show-more {
-    padding: 20px 30px;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    display: inline-block;
     background-color: #3b7ef0;
   }
 }
